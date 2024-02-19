@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dcube_Portfolio</title>
+  <meta name="description" content="ディーキューブのポートフォリオ">
+  <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Rokkitt&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header id="header">
+    <div class="header-flex wrapper">
+      <h1 class="site-logo">
+        <a><img src="images/Logo.png" alt="dcube"></a>
+      </h1>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <main>
+    <section id="works">
+      <h2 class="sec-title">WORKS</h2>
+      <ul class="works-detail inner-wrapper">
+        <li class="work-list">
+          <a href="#"><img src="images/works_01.png"></a>
+          <div class="work-text">
+            <h3 class="work-heading">コーポレートサイト作成（複数サイトを参考に作成）</h3>
+            <p>
+              既存のいくつかのコーポレートサイトを参考にコーディングしたものです。<br>
+              コードは見ずに、大まかなデザインと動きを目視して再現しました。<br>
+              コーディングスキルの目安としていただければと思います。
+            </p>
+            <p class="work-explan">
+              ナビゲーションはFIXにせず、逆スクロール時に出てくるようにしています。モバイルサイズではハンバーガーメニューが作動。
+              ヒーローエリアは3枚の画像がスライダーで動き、１枚目と３枚目には文字が浮き出るようにしました。
+              また各セクションが画面に現れると、１回だけそれぞれのコンテンツがアニメーションで動きます。
+              洗練された企業のサイトイメージで製作いたしました。
+            </p>
+          </div>
+        </li>
+        <li class="work-list">
+          <a href="#"><img src="images/works_02.png"></a>
+          <div class="work-text">
+            <h3 class="work-heading">ブログサイトの模写</h3>
+            <p>
+              既存のブログサイトを模写コーディングしたものです。<br>
+              テーマは使わずに、CSSとJSだけでデザインと動きを再現しました。
+            </p>
+            <p class="work-explan">
+              背景だけダークトーンにして、文字を際立たせたり、疑似要素（NEWSコンテンツ内の斜めの棒）を取り入れて、デザインを忠実に再現できるよう心がけました。
+            </p>
+          </div>
+        </li>
+      </ul>
+
+    </section>
+    <section id="about">
+      <h2 class="sec-title">ABOUT</h2>
+      <div class="about-flex inner-wrapper">
+        <div class="about-left">
+          <img src="images/Logo.png" alt="logo">
+          <dl class="info">
+            <dt>会社名</dt>
+            <dd>株式会社ディーキューブ</dd>
+            <dt>所在地</dt>
+            <dd>福岡県福岡市早良区賀茂2-20-26<br>(博多区より移転予定です)</dd>
+            <dt>e-mail</dt>
+            <dd>info@dcube-med.com</dd>
+          </dl>
+        </div>
+        <div class="about-right">
+          <p>こんにちは、プロフィールをご覧頂きありがとうございます。<br>
+            これまで人材サービスやサロン経営をやっておりましたが、かねてより興味のあったWeb制作に軸足を移すことにいたしました。<br>
+            お客様のご要望に沿ったプランをご提案いたしますので、お気軽にご相談ください。</p>
+          <ul>
+            <li>「サイトを制作したいけど、何をすればいいの？」 </li>
+            <li>「デザインはあるけど、コーディングだけして欲しいなあ」 </li>
+            <li>「ざっくりとしたイメージしかないけど・・・」</li>
+            <li>「予算〇万円しかないよ～」</li>
+          </ul>
+          <p>お気軽にそして、ざっくばらんにご相談ください！<br>
+            丁寧にヒアリングを行って、適切な構築方法でサイト制作をさせていただきます。<br>
+            また 「コーディングだけさくっとやってほしい」「ワイヤーあるからデザインだけしてくれないかな」といったご要望をお持ちの、デザイナー様やディレクター様からのご依頼にもスピーディーに対応させていただきます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrapper">
+      <h2 class="sec-title">CONTACT</h2>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScoiY-SPegSo7n-IK9woJbszfgizs65zGObz9OCVP920UC5UQ/viewform?embedded=true"
+        width="640" height="744" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+    </section>
+  </main>
+  <footer id="footer">
+    <nav class="footer-nav">
+      <ul class="main-nav">
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <a href="#"><img src="images/Logo.png" alt="dcube"></a>
+    </nav>
+    <p><small>&copy;ディーキューブ</small></p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/be1a4bac8e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

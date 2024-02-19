@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+body {
+  color: #333;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.sec-title {
+  font-family: 'Rokkitt', serif;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  color: rgb(3, 3, 80);
+  margin-bottom: 2rem;
+}
+p {
+  line-height: 1.5;
+}
+.wrapper {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: auto;
+}
+.inner-wrapper {
+  padding: 0 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER
+************************************** */
+#header {
+  background: rgb(3, 3, 80);
+  color: #fff;
+  padding: .3rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-logo img {
+  width: 7rem;
+  height: auto;
+}
+.main-nav {
+  display: flex;
+}
+.main-nav li {
+  padding-right: 1rem;
+  margin-right: 1rem;
+  border-right: 1px solid #ccc;
+  transition: all .5s ease;
+}
+.main-nav li:hover {
+  color: red;
+}
+
+/* WORKS
+************************************** */
+#works {
+  margin: 10rem 0 8rem;
+}
+.work-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: 100%;
+}
+.work-list a {
+  display: block;
+  width: 50%;
+  filter: drop-shadow(0 0 0.75rem rgb(187, 187, 237));
+  transition: all .5s ease;
+}
+.work-list a:hover {
+  scale:1.1;
+  filter: none;
+}
+.work-text {
+  width:45%;
+}
+.work-heading {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-bottom: 4px solid rgba(3, 3, 80, 0.607);
+  display: inline-block;
+}
+.work-explan {
+  padding-top: 2rem;
+}
+.work-explan::before {
+  content: "\f06a";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: rgb(3, 3, 80, 0.607);
+}
+
+/* ABOUT
+************************************** */
+#about {
+  margin-bottom: 8rem;
+}
+.about-flex {
+  display: flex;
+  margin-top: 1rem;
+}
+.about-left {
+  width: 45%;
+}
+.about-right {
+  width: 55%;
+}
+.about-left img {
+  height: 7rem;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.info dt {
+  width: 35%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.info dd {
+  width: 65%;
+  text-align: left;
+}
+.about-right ul {
+  margin: 1rem 0;
+}
+.about-right li {
+  margin: 1rem 0;
+}
+.about-right li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: rgb(3, 3, 80);
+}
+
+/* CONTACT
+************************************** */
+#contact {
+  margin: 0 auto 8rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* FOOTER
+************************************** */
+#footer {
+  margin: auto;
+  text-align: center;
+  padding: 1rem 0 0.5rem;
+  color: rgb(3, 3, 80);
+  border-top: 1px solid rgb(3, 3, 80);
+}
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+.footer-nav img {
+  height: 2rem;
+}
+
+
+/* SP
+******************************************************* */
+@media (max-width: 900px) {
+
+  /* HEADER
+************************************** */
+.site-logo img {
+  width: 6rem;
+}
+.main-nav li {
+  font-size: .875rem;
+}
+
+/* WORKS
+************************************** */
+#works {
+  margin: 6rem 0 2rem;
+}
+.work-list {
+  flex-direction: column;
+  /* padding: 1rem 0;
+  width: 100%; */
+}
+.work-list a {
+  width: 100%;
+}
+.work-text {
+  width:100%;
+  margin: 2rem auto;
+}
+
+/* ABOUT
+************************************** */
+#about {
+  margin-bottom: 4rem;
+}
+.about-flex {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.about-left {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.about-right {
+  width: 100%;
+}
+.about-left img {
+  height: 5rem;
+}
+
+/* CONTACT
+************************************** */
+#contact iframe {
+  width: 95%;
+}
+
+}
